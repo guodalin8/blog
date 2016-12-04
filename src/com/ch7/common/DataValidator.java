@@ -28,6 +28,4 @@ public class DataValidator {
 		return Pattern.compile(pattern).matcher(input).matches();
 	}
 	
-/*	****************/
-	
 }

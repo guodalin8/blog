@@ -8,7 +8,7 @@ Users users=new Users();
 String username=request.getParameter("AdminName");
 String password=request.getParameter("Password");
 if(!users.isExist(username, password))
-	out.println("<script>alert('用户名或密码错误');</script>");
+	out.println("<script>alert('用户名或密码错误');window.location.href('login.jsp');</script>");
 else{
 	Utilty.writeCookie(response, "admin", username);
 	response.sendRedirect("index.html");
