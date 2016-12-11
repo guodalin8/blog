@@ -11,6 +11,6 @@ if(!users.isExist(username, password))
 	out.println("<script>alert('用户名或密码错误');window.location.href('login.jsp');</script>");
 else{
 	Utilty.writeCookie(response, "admin", username);
-	response.sendRedirect("index.html");
+	response.sendRedirect("menu.jsp");
 }
 %>

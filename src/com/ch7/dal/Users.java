@@ -1,6 +1,5 @@
 package com.ch7.dal;
 
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -8,6 +7,9 @@ import java.util.List;
 
 import com.ch7.common.Conn;
 import com.ch7.model.UsersInfo;
+
+
+
 
 public class Users {
 	Conn conn=new Conn();

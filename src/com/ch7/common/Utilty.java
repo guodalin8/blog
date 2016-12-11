@@ -7,6 +7,8 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+
 /**
  * @author dalin
  *»ùÀà
@@ -64,9 +66,10 @@ public class Utilty {
 		if(ck==null)
 			return "";
 		for(Cookie c:ck){
-			if(c.getName().equals(key));
+			if(c.getName().equals(key)){
 			value=c.getValue();
 			break;
+			}
 		}
 		return value;
 	}
